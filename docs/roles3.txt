@@ -1,0 +1,4 @@
+Scrum Master: Jasmeen
+Product Owner: Artun
+Repository Manager: Ryan
+Team Member: Ethan

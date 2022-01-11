@@ -1,0 +1,27 @@
+Our code style is similar to the style guide suggested by Dr. Fraser:
+https://opencoursehub.cs.sfu.ca/bfraser/grav-cms/cmpt276/course-info/styleguide
+
+Checkstyle is the authoritative source for our code style guide.
+Its configuration can be found in the app/checkstyle.xml file.
+We added a Gitlab CI/CD pipeline to verify the code passes both Checkstyle and an Android Lint check.
+No code is allowed to merge without passing the both checks.
+
+This is an overview of what Checkstyle enforces, and a few extras we enforced during code reviews:
+- All class names must start with a uppercase letter and be in camel case.
+- All function names must start with a lowercase letter and be in camel case.
+- All constants must be capitalized, with words separated by underscores.
+- All variable names must start with a lowercase letter and be in camel case.
+- Abbreviations may remain capitalized, e.g. childSIN would be allowed.
+- All function and variable names must be descriptive.
+- No "magic" numbers or strings allowed. They must be defined in a constant.
+- No unused or redundant imports allowed.
+- If possible, Lambda functions should be used for readability.
+- No single-line if statements.
+- Each class requires a Javadoc comment.
+- All class members should be defined at the top of the class.
+- Favor more restrictive method visibility, e.g. use private if it should not be accessed elsewhere.
+- Class members should be private and accessed using getters and setters.
+- Do not provide setters for variables which should not be modified.
+- Do not repeat code: move common functionality into a single function (if possible).
+     - Some code, e.g. getIntent and saving model classes into SharedPreferences is not easy to pull
+       out and is allowed to be duplicated.

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".BreathsActivity">
+
+    <include
+        android:id="@+id/toolbar_Breaths"
+        layout="@layout/toolbar" />
+
+    <ImageButton
+        android:id="@+id/breaths_btnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbar_Breaths"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar_Breaths"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_Breaths"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/breaths_layoutContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_Breaths">
+
+        <ImageButton
+            android:id="@+id/breathes_imageButton"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_115sdp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/breaths_btn_begin" />
+
+        <TextView
+            android:id="@+id/breaths_txtBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/_23sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/breathes_imageButton"
+            app:layout_constraintEnd_toEndOf="@+id/breathes_imageButton"
+            app:layout_constraintStart_toStartOf="@+id/breathes_imageButton"
+            app:layout_constraintTop_toTopOf="@+id/breathes_imageButton" />
+
+        <TextView
+            android:id="@+id/breaths_txtHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:gravity="center"
+            android:textSize="@dimen/_16sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/breaths_layoutContent" />
+
+        <TextView
+            android:id="@+id/breaths_txtNumLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name_short">PracParent</string>
+    <string name="app_name_long">Practical Parent</string>
+    <string name="flip_coin">Flip Coin</string>
+    <string name="task">Tasks</string>
+    <string name="take_a_breath">Take a Breath</string>
+    <string name="timeout">Timeout</string>
+    <string name="children">Children</string>
+    <string name="help">Help</string>
+    <string name="add">Add</string>
+    <string name="child_name">Child Name</string>
+    <string name="child_pos_in_queue">%1$d.</string>
+    <string name="child_name_empty_error">Please enter a non-empty name</string>
+    <string name="task_name_empty_error">Please enter a non-empty name</string>
+    <string name="name">Name</string>
+    <string name="description">Description</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="edit_child">Edit Child</string>
+    <string name="add_child">Add Child</string>
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="enter_a_name">Enter a name</string>
+    <string name="enter_a_description">Enter a Description</string>
+    <string name="history">History</string>
+    <string name="task_turn_child"> %1$s\'s turn!</string>
+    <string name="no_user_selected_to_flip">No one selected</string>
+    <string name="user_to_flip_next">It\'s %1$s\'s turn next!</string>
+    <string name="heads_result">HEADS!</string>
+    <string name="tails_result">TAILS!</string>
+    <string name="heads_radio_txt">Heads</string>
+    <string name="tails_radio_txt">Tails</string>
+    <string name="flip_history">Flip History</string>
+    <string name="shows_only_person_name">Show only %1$s</string>
+    <string name="flip_result_child"><![CDATA[<b>%1$s</b> flipped <b>%2$s</b> and <b>%3$s</b>]]></string>
+    <string name="won_green"><![CDATA[<font color="#00C853">won</font>]]></string>
+    <string name="lost_red"><![CDATA[<font color="#CC304F">lost</font>]]></string>
+    <string name="flip_result"><![CDATA[Flipped <b>%1$s</b>]]></string>
+    <string name="heads">heads</string>
+    <string name="tails">tails</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="choose_or_enter_the_time">Choose or Enter the Time</string>
+    <string name="start">Start</string>
+    <string name="resume">Resume</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="finished">Finished</string>
+    <string name="order">Order</string>
+    <string name="timer_notification_channel_name">Timer Alarm</string>
+    <string name="timer_notification_channel_desc">Notifications when the timer finishes.</string>
+    <string name="timer_notification_title">Timer Finished!</string>
+    <string name="timer_notification_desc">Tap to turn off alarm and dismiss.</string>
+    <plurals name="minute">
+        <item quantity="one">%d minute</item>
+        <item quantity="other">%d minutes</item>
+    </plurals>
+    <string name="choose_time_error">Please enter greater than 0 minutes</string>
+    <string name="chooseTimeActivity_timer_hint">min</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+    <string name="select_no_one">Select No One</string>
+    <string name="childEditActivity_confirmDeleteMsg">Are you sure you want to delete this child? You\'ll lose their flip history as well.</string>
+    <string name="taskEditActivity_confirmDeleteMsg">Are you sure you want to delete this task?</string>
+    <string name="bg_music">BG Music:</string>
+    <string name="no_history_entries">No history entries.</string>
+    <string name="helpActivity_appUsageTitleTxt">Usage Instructions</string>
+    <string name="helpActivity_appUsageInstructions">
+        <b>Tasks:</b>\n
+        1. Tap the \"Tasks\" button in the main menu.\n
+        2. The app will show a list of tasks and the child whose turn it is next.\n
+        3. Tap the \"+\" button at the top to add a new task.\n
+        4. Tap on a task to get more information, edit the task or mark the child as having taken their turn.\n
+        \n
+        <b>Flip a Coin:</b>\n
+        1. Tap the \"Flip Coin\" button in the main menu.\n
+        2. If there are children configured, the app will show the child\'s name whose turn it is and allow the child to select heads or tails.\n
+        3. Tap the \"Flip Coin\" button to flip.\n
+        4. The result of the flip will be shown and automatically saved in the flip history.\n
+        5. To view the order in which children will flip, tap on the text displaying who\'s flipping next.\n
+        6. Tapping on a child\'s name in the queue will move that child to the front of the queue.\n
+        \n
+        <b>Take a Breath:</b>\n
+        1. Tap the \"Take a Breath\" button in the main menu.\n
+        2. The default number of breaths is three, this can be changed by tapping the options button on the top right and choosing the number of breaths between one and ten.\n
+        3. Tap on the \"Begin\" button to start.\n
+        4. Hold the \"IN\" button and inhale for at least three seconds. After three seconds the color will change to a light green. After ten seconds a reminder shows up to let go.\n
+        5. The display will then give a prompt to exhale for at least three seconds. After three seconds the color will change to a light yellow. After ten seconds the exhale state ends by itself if the user has not tapped on the screen.\n
+        6. At this point the number of breaths will decrease by one. Repeat breathing until no breaths are left.\n
+        7. Once all breaths are completed, the user will receive the message \"Good Job\". Tap the \"Good Job\" button to restart, or tap the back button to return to the main screen.\n
+        \n
+        <b>Timeout:</b>\n
+        1. Tap the \"Timeout\" button in the main menu.\n
+        2. Select one of the timer options or create a custom timer by entering the number of minutes and then tap \"Start Timer\".\n
+        3. Optionally pause, resume or reset the timer. If it is reset, it can either be started again or cancelled.\n
+        4. Timer can be slowed down or sped up by tapping the options button on the top right and choosing a speed. A display of the current speed is shown in the bottom right.\n
+        5. If the app is closed, the timer will continue to run in the background.\n
+        6. When timer is finished, an alarm will go off, the device will vibrate and a notification will appear. Tap the notification to turn off the alarm and dismiss it.\n
+        \n
+        <b>Configure Children:</b>\n
+        1. Tap the "Children" button in the main menu.\n
+        2. If there are children already configured, the app will show a list of children.\n
+        3. Tap on a child\'s name to edit or delete them. If a child is deleted, their coin flip history will also be removed.\n
+        4. To add a new child, tap on the \"+\" button at the top.\n
+        5. Enter the name of the child. If desired, a photo can be added by tapping the blue edit pencil. When finished, tap \"Save\".\n
+    </string>
+    <string name="helpActivity_authorTitle">Team Flame</string>
+    <string name="helpActivity_author_details">
+        Artun <i>(Product Owner)</i>\n
+        Ethan <i>(Team Member)</i>\n
+        Jasmeen <i>(Scrum Master)</i>\n
+        Ryan <i>(Repository Manager)</i>
+    </string>
+    <string name="helpActivity_referencesTitle">References</string>
+    <string name="helpActivity_references_data">
+        Images:\n
+        \t\t<a href="https://www.turbosquid.com/3d-models/3d-model-euro-coin/964519">Euro Coin 3D Model</a>\n
+        \t\t<a href="https://www.shutterstock.com/image-vector/initial-letter-pp-linked-rounded-design-693959755">PP Initials App Icon Image</a>\n
+        \t\t<a href="https://miro.medium.com/max/700/0*zKIRrTDH0O540W1d.png">App Icon Background</a>\n
+        \t\t<a href="https://wallpaperaccess.com/gradient">Timeout Gradient BG Image</a>\n
+        \t\t<a href="https://www.pinterest.ca/pin/271693789999529311/">Main Activity Children BG</a>\n
+        \t\t<a href="http://clipart-library.com/clip-art/cartoon-grass-transparent-12.htm">Main Activity Grass BG</a>\n
+        \t\t<a href="https://www.clipartmax.com/middle/m2i8d3i8K9K9b1b1_alarm-clock-icon-myiconfinder-iphone-remind-me-icon/">Clock Alarm Icon</a>\n
+        \t\t<a href="https://www.hiclipart.com/free-transparent-background-png-clipart-ytyui">Sound On Icon</a>\n
+        \t\t<a href="https://www.pikpng.com/transpng/xRToRx/">Sound Off Icon</a>\n
+        \t\t<a href="https://www.iconfinder.com/icons/2607295/animal_bunny_easter_bunny_emoji_pet_rabbit_icon">Default Child Image</a>\n
+        \t\t<a href="http://appletree-preschool.com/sessions/pencil-icon-hi3/">Pencil icon</a>\n\n
+        Sounds:\n
+        \t\t<a href="https://www.youtube.com/watch?v=GCE0MQK2Sww">Spinning Coin Sound</a>\n
+        \t\t<a href="https://www.fesliyanstudios.com/royalty-free-music/download/serenity/897">App BG Music</a>\n
+        \t\t<a href="https://www.youtube.com/watch?v=490z2QH6v5o">Inhale/Exhale Sound</a>
+    </string>
+    <string name="choose">Select</string>
+    <string name="camera">Camera</string>
+    <string name="remove">Remove Image</string>
+    <string name="new_image">New Image</string>
+    <string name="gallery">Gallery</string>
+    <string name="something_wrong_try_again">Something went wrong. Please try again.</string>
+    <string name="took_turn">Take Turn</string>
+    <string name="number_of_breaths">Number of breaths</string>
+    <string name="begin">Begin</string>
+    <string name="good_job">Good Job</string>
+    <string name="in">IN</string>
+    <string name="out">OUT</string>
+    <plurals name="breaths_heading_begin">
+        <item quantity="one">Let\'s take a breath together</item>
+        <item quantity="other">Let\'s take %d breaths together</item>
+    </plurals>
+    <plurals name="breaths_num_left">
+        <item quantity="one">%d breath left</item>
+        <item quantity="other">%d breaths left</item>
+    </plurals>
+    <string name="keep_inhaling">Keep Inhaling!</string>
+    <string name="keep_exhaling">Keep Exhaling!</string>
+    <string name="breath_before_inhale">Hold button and breathe in</string>
+    <string name="breaths_hold_too_long">Release button and breathe out</string>
+    <string name="all_done">All done!</string>
+    <string name="choose_time_speed">Timer speed (%):</string>
+    <string name= "timer_speed">Timer speed @ %d%%</string>
+    <string name= "ok">OK</string>
+</resources>

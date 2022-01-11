@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- circular progress bar code inspired by https://www.youtube.com/watch?v=YsHHXg1vbcc -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:thicknessRatio="12"
+            android:useLevel="false">
+
+            <solid android:color="@color/colorTransparentNavyBlue" />
+        </shape>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="-90"
+            android:toDegrees="-90">
+
+            <shape
+                android:shape="ring"
+                android:thicknessRatio="12"
+                android:useLevel="true">
+
+                <gradient
+                    android:centerColor="@color/colorAccentBlue"
+                    android:centerX="0.3"
+                    android:endColor="@color/colorAccentPink"
+                    android:startColor="@color/colorAccentPurple"
+                    android:type="sweep" />
+            </shape>
+        </rotate>
+    </item>
+
+</layer-list>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintGuide_percent=".7">
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_margin="@dimen/_6sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_dialog_txtName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/task_dialog_imageBtnEdit"
+        app:layout_constraintEnd_toStartOf="@+id/task_dialog_imageBtnEdit"
+        app:layout_constraintStart_toEndOf="@+id/space"
+        app:layout_constraintTop_toTopOf="@+id/task_dialog_imageBtnEdit" />
+
+    <ImageButton
+        android:id="@+id/task_dialog_imageBtnEdit"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@drawable/edit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/task_dialog_txtDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_dialog_txtName" />
+
+    <Space
+        android:layout_width="@dimen/_240sdp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/task_dialog_imagePortrait"
+        app:layout_constraintEnd_toEndOf="@+id/task_dialog_imagePortrait"
+        app:layout_constraintStart_toStartOf="@+id/task_dialog_imagePortrait"
+        app:layout_constraintTop_toTopOf="@+id/task_dialog_imagePortrait" />
+
+    <ImageView
+        android:id="@+id/task_dialog_imagePortrait"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_dialog_txtDescription" />
+
+    <TextView
+        android:id="@+id/task_dialog_txtTurnChild"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintTop_toBottomOf="@+id/task_dialog_imagePortrait" />
+
+    <Button
+        android:id="@+id/task_dialog_btnCancel"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="@string/close"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_dialog_txtTurnChild" />
+
+    <Button
+        android:id="@+id/task_dialog_btnTookTurn"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:text="@string/took_turn"
+        android:textSize="@dimen/_12sdp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/task_dialog_txtTurnChild" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
